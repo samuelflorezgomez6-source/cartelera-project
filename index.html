@@ -12,17 +12,29 @@
         <h1>🎬 Cine Colombia</h1>
     </header>
 
+    <!-- Barra de navegación y consulta -->
+    <nav class="main-nav">
+        <div class="nav-links">
+            <a href="#" id="nav-cartelera" class="nav-link" data-catalog="cartelera">Cartelera</a>
+            <a href="#" id="nav-explorar" class="nav-link" data-catalog="explorar">Consulta General</a>
+            <a href="#" id="nav-salas" class="nav-link">Salas</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar película por título...">
+            <select id="genre-filter" class="custom-input genre-filter">
+                <option value="">Todos los géneros</option>
+            </select>
+        </div>
+    </nav>
+
     <main>
         <!-- Sección Cartelera -->
         <section id="cartelera-section">
-            <h2>Películas en Cartelera</h2>
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Buscar película por título...">
-            </div>
+            <h2 id="cartelera-title">Películas en Cartelera</h2>
             <div id="movies-container" class="movies-grid"></div>
         </section>
 
-        <!-- Sección Salas (Mantiene tu función loadRooms) -->
+        <!-- Sección Salas -->
         <section id="salas-section">
             <h2>Salas Disponibles</h2>
             <div id="rooms-container" class="rooms-grid"></div>
@@ -61,32 +73,78 @@
             <button type="button" id="back-to-detail-btn">← Volver al detalle</button>
             <h2>Selecciona tus asientos</h2>
 
+            <p id="function-summary-line" class="function-summary-line">—</p>
+
             <div class="screen-container">
                 <div class="screen">PANTALLA</div>
             </div>
 
             <div class="seats-legend">
-                <div><span class="seat-sample available"></span> Disponible</div>
-                <div><span class="seat-sample selected"></span> Seleccionado</div>
-                <div><span class="seat-sample sold"></span> Ocupado</div>
+                <div><span class="seat-sample available" aria-hidden="true"></span> Disponible</div>
+                <div><span class="seat-sample selected" aria-hidden="true"></span> Seleccionado</div>
+                <div><span class="seat-sample reserved" aria-hidden="true"></span> Reservado</div>
+                <div><span class="seat-sample sold" aria-hidden="true"></span> Ocupado</div>
             </div>
 
-            <div id="seats-container" class="seats-grid"></div>
+            <div id="seats-scroll" class="seats-scroll">
+                <div id="seats-container" class="seats-grid"></div>
+            </div>
 
-            <div style="margin-top: 20px; background: var(--bg-card); padding: 20px; border-radius: 8px;">
-                <p><strong>Asientos seleccionados:</strong> <span id="selected-seats-text">Ninguna</span></p>
-                <div style="display: flex; gap: 10px; margin: 15px 0;">
-                    <input type="text" id="user-name" class="custom-input" placeholder="Tu Nombre" required>
-                    <input type="email" id="user-email" class="custom-input" placeholder="Tu Correo" required>
+            <div class="booking-panel">
+                <div id="selected-seats-block">
+                    <p><strong>Asientos seleccionados:</strong> <span id="selected-seats-text">Ninguna</span></p>
+                    <p id="selected-seats-detail" class="seat-detail-text"></p>
+                    <div class="booking-totals">
+                        <span><strong>Cantidad de tickets:</strong> <span id="total-tickets-display">0</span></span>
+                        <span><strong>Total:</strong> <span id="total-price-display">$0</span></span>
+                    </div>
+                    <p id="reserve-warning" class="warning-text"></p>
                 </div>
-                <button type="button" id="confirm-booking-btn" class="select-function-btn" style="width: 100%; font-size: 1rem;" disabled>Confirmar Reserva</button>
+
+                <div class="form-row">
+                    <input type="text" id="user-name" class="custom-input" placeholder="Tu Nombre" autocomplete="name">
+                    <input type="email" id="user-email" class="custom-input" placeholder="Tu Correo" autocomplete="email">
+                </div>
+
+                <div class="form-row">
+                    <label class="operation-label" for="operation-type">Tipo de operación:</label>
+                    <select id="operation-type" class="custom-input">
+                        <option value="reserve">🔖 Reservar asientos</option>
+                        <option value="purchase">🎟️ Comprar boletos</option>
+                    </select>
+                </div>
+
+                <button type="button" id="continue-booking-btn" class="select-function-btn" style="width: 100%; font-size: 1rem;" disabled>Ver resumen y continuar</button>
             </div>
         </section>
 
+        <!-- Modal de Trailer -->
+        <div id="trailer-modal" class="modal-overlay trailer-modal" style="display: none;">
+            <div class="modal-content">
+                <h2 id="trailer-title">Trailer</h2>
+                <iframe id="trailer-frame" class="trailer-frame" src="" title="Trailer de la película" allowfullscreen></iframe>
+                <div class="modal-actions">
+                    <button type="button" id="trailer-close-btn" class="secondary-btn">Cerrar trailer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Resumen antes de confirmar -->
+        <div id="summary-modal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+                <h2 id="summary-title">Resumen de la operación</h2>
+                <pre class="summary-pre" id="summary-content"></pre>
+                <div class="modal-actions">
+                    <button type="button" id="confirm-booking-btn" class="select-function-btn">Confirmar Reserva</button>
+                    <button type="button" id="cancel-booking-btn" class="secondary-btn">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Sección Recibo / Ticket -->
         <section id="receipt-section" style="display: none;">
-            <div style="background: var(--bg-card); padding: 25px; border-radius: 8px; max-width: 500px; margin: 0 auto; border: 1px solid var(--border-color);">
-                <h2>🎟️ Comprobante de Reserva</h2>
+            <div class="receipt-card">
+                <h2>🎟️ Comprobante</h2>
                 <div id="receipt-content"></div>
                 <button type="button" id="finish-booking-btn" class="select-function-btn" style="width: 100%; margin-top: 20px;">Finalizar y Volver</button>
             </div>

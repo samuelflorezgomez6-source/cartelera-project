@@ -9,15 +9,17 @@
     --bg-card: #1f1f1f;            /* Gris oscuro para contenedores */
     --bg-card-hover: #2a2a2a;      /* Hover suave */
     --border-color: #333333;        /* Bordes sutiles */
-    
+
     --netflix-red: #E50914;        /* Rojo insignia */
     --netflix-red-hover: #B81D24;  /* Rojo oscuro al pasar el cursor */
     --selected-yellow: #FFC107;     /* Amarillo brillante para selección */
+    --available-green: #2E7D32;     /* Verde para asientos disponibles */
+    --reserved-orange: #E67E22;     /* Naranja para asientos reservados */
     --sold-red: #8B0000;           /* Rojo oscuro para ocupados */
-    
+
     --text-primary: #FFFFFF;
     --text-muted: #AAAAAA;
-    
+
     --shadow-glow: 0 0 20px rgba(229, 9, 20, 0.4);
     --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -60,13 +62,76 @@ h2 {
     display: inline-block;
 }
 
+/* --- BARRA DE NAVEGACIÓN --- */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 10px;
+    z-index: 20;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: var(--transition-fast);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-primary);
+    background: var(--netflix-red);
+}
+
+.main-nav .search-container {
+    margin-bottom: 0;
+    flex: 1 1 260px;
+    justify-content: flex-end;
+}
+
+/* --- MODAL DE TRAILER --- */
+.trailer-modal .modal-content {
+    max-width: 640px;
+    width: 92%;
+    text-align: center;
+}
+
+.trailer-modal .trailer-frame {
+    width: 100%;
+    height: 340px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
 /* --- BUSCADOR --- */
 .search-container {
     margin-bottom: 25px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 #search-input {
-    width: 100%;
+    flex: 1 1 280px;
     max-width: 450px;
     padding: 12px 20px;
     font-size: 1rem;
@@ -82,6 +147,13 @@ h2 {
     border-color: var(--netflix-red);
     box-shadow: var(--shadow-glow);
     background-color: #252525;
+}
+
+.genre-filter {
+    flex: 0 1 220px;
+    border-radius: 25px;
+    margin-top: 0 !important;
+    cursor: pointer;
 }
 
 /* --- GRILLA Y TARJETAS DE PELÍCULAS --- */
@@ -186,6 +258,7 @@ h2 {
 
 .movie-detail-poster {
     width: 260px;
+    flex-shrink: 0;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -193,6 +266,29 @@ h2 {
 
 .movie-detail-info h2 {
     margin-top: 0;
+}
+
+.movie-detail-info p {
+    margin: 6px 0;
+}
+
+.cast-block ul {
+    margin: 4px 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.cast-block li::before {
+    content: "🎭 ";
+}
+
+.trailer-frame {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 6px;
 }
 
 .functions-list {
@@ -209,11 +305,17 @@ h2 {
     background-color: #181818;
     text-align: center;
     transition: var(--transition-fast);
+    min-width: 190px;
 }
 
 .function-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(229, 9, 20, 0.3);
+}
+
+.function-card .available-count {
+    color: #7FD98A;
+    font-size: 0.85rem;
 }
 
 .select-function-btn {
@@ -231,6 +333,11 @@ h2 {
 .select-function-btn:hover:not(:disabled) {
     background-color: var(--netflix-red-hover);
     transform: scale(1.05);
+}
+
+.select-function-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* --- PANTALLA CINE Y ASIENTOS --- */
@@ -253,11 +360,28 @@ h2 {
     box-shadow: 0 10px 25px rgba(229, 9, 20, 0.5);
 }
 
+.function-summary-line {
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
 .seats-legend {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-bottom: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+.seats-legend div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .seat-sample {
@@ -265,8 +389,13 @@ h2 {
     width: 18px;
     height: 18px;
     border-radius: 4px;
-    margin-right: 6px;
-    vertical-align: middle;
+    border: 1px solid #444;
+}
+
+.seats-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
 .seats-grid {
@@ -274,6 +403,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    min-width: max-content;
+    margin: 0 auto;
 }
 
 .seat-row {
@@ -290,21 +421,23 @@ h2 {
     border: none;
     cursor: pointer;
     font-weight: 700;
+    font-size: 0.8rem;
     transition: var(--transition-fast);
+    color: var(--text-primary);
 }
 
-/* Disponible */
+/* Disponible (VERDE) */
 .seat-btn.available, .seat-sample.available {
-    background-color: #2b2b2b !important;
+    background-color: var(--available-green) !important;
     color: var(--text-primary) !important;
-    border: 1px solid #444;
+    border: 1px solid #4CAF50;
 }
 
 .seat-btn.available:hover {
-    background-color: var(--netflix-red) !important;
+    background-color: #43A047 !important;
     color: white !important;
     transform: scale(1.2);
-    box-shadow: 0 0 10px var(--netflix-red);
+    box-shadow: 0 0 10px #4CAF50;
 }
 
 /* Seleccionado (AMARILLO VIBRANTE) */
@@ -316,12 +449,159 @@ h2 {
     animation: pulse 1.5s infinite alternate;
 }
 
-/* Ocupado/Vendido */
-.seat-btn.reserved, .seat-btn.sold, .seat-sample.reserved, .seat-sample.sold {
+/* Reservado (NARANJA) */
+.seat-btn.reserved, .seat-sample.reserved {
+    background-color: var(--reserved-orange) !important;
+    color: #3A1E00 !important;
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+/* Ocupado/Vendido (ROJO) */
+.seat-btn.sold, .seat-sample.sold {
     background-color: var(--sold-red) !important;
     color: #666 !important;
     cursor: not-allowed;
     opacity: 0.4;
+}
+
+/* --- PANEL DE RESERVA --- */
+.booking-panel {
+    margin-top: 25px;
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.seat-detail-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 6px 0;
+}
+
+.seat-chip {
+    background: #252525;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 4px 10px;
+    color: var(--text-primary);
+}
+
+.booking-totals {
+    display: flex;
+    gap: 24px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.warning-text {
+    color: var(--selected-yellow);
+    font-size: 0.85rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-row .custom-input {
+    flex: 1;
+    margin-top: 0;
+}
+
+.operation-label {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* --- MODAL DE RESUMEN --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: var(--bg-card);
+    border: 2px solid var(--netflix-red);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 0 40px rgba(229, 9, 20, 0.35);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.summary-pre {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #181818;
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 18px;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin: 15px 0;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background-color: #333;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition-fast);
+}
+
+.secondary-btn:hover {
+    background-color: var(--netflix-red);
+    border-color: var(--netflix-red);
+    transform: scale(1.05);
+}
+
+/* --- RECIBO --- */
+.receipt-card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+}
+
+.rating-card {
+    background: #252525;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
 }
 
 /* --- SALAS --- */
@@ -367,17 +647,105 @@ section {
 }
 
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(12px); 
+    from {
+        opacity: 0;
+        transform: translateY(12px);
     }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @keyframes pulse {
     from { box-shadow: 0 0 8px var(--selected-yellow); }
     to { box-shadow: 0 0 18px var(--selected-yellow); }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .movie-detail-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .movie-detail-poster {
+        width: 200px;
+    }
+
+    .trailer-frame {
+        height: 200px;
+    }
+
+    .seats-grid {
+        align-items: flex-start;
+    }
+
+    .seat-row {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: stretch;
+        position: static;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .main-nav .search-container {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .trailer-modal .trailer-frame {
+        height: 220px;
+    }
+
+    .seat-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.6rem;
+        border-radius: 6px;
+    }
+
+    .seat-row {
+        gap: 6px;
+    }
+
+    #cartelera-section h2, #salas-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .booking-totals {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .operation-label {
+        white-space: normal;
+    }
+
+    .seats-legend {
+        gap: 12px;
+        font-size: 0.8rem;
+    }
 }

@@ -1,10 +1,91 @@
 {
-  "billboard": [],
+  "billboard": [
+    {
+      "id": "1",
+      "tmdbId": 969681
+    },
+    {
+      "id": "2",
+      "tmdbId": 1368337
+    },
+    {
+      "id": "3",
+      "tmdbId": 1288445
+    },
+    {
+      "id": "4",
+      "tmdbId": 1621552
+    },
+    {
+      "id": "5",
+      "tmdbId": 1323244
+    },
+    {
+      "id": "6",
+      "tmdbId": 1084244
+    },
+    {
+      "id": "7",
+      "tmdbId": 1339713
+    },
+    {
+      "id": "8",
+      "tmdbId": 1516698
+    },
+    {
+      "id": "9",
+      "tmdbId": 1108427
+    },
+    {
+      "id": "10",
+      "tmdbId": 1315772
+    },
+    {
+      "id": "11",
+      "tmdbId": 1375646
+    },
+    {
+      "id": "12",
+      "tmdbId": 1232569
+    },
+    {
+      "id": "13",
+      "tmdbId": 1083381
+    },
+    {
+      "id": "14",
+      "tmdbId": 1130948
+    },
+    {
+      "id": "15",
+      "tmdbId": 1212763
+    },
+    {
+      "id": "16",
+      "tmdbId": 1284465
+    },
+    {
+      "id": "17",
+      "tmdbId": 1284041
+    },
+    {
+      "id": "18",
+      "tmdbId": 87513
+    },
+    {
+      "id": "19",
+      "tmdbId": 1101383
+    },
+    {
+      "id": "20",
+      "tmdbId": 1523145
+    }
+  ],
   "functions": [
     {
       "id": "1",
       "tmdbId": 969681,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "14:00",
       "price": 15000
@@ -12,7 +93,7 @@
     {
       "id": "2",
       "tmdbId": 969681,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "18:00",
       "price": 18000
@@ -20,7 +101,7 @@
     {
       "id": "3",
       "tmdbId": 1368337,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "15:30",
       "price": 15000
@@ -28,7 +109,7 @@
     {
       "id": "4",
       "tmdbId": 1288445,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "16:00",
       "price": 16000
@@ -36,7 +117,7 @@
     {
       "id": "5",
       "tmdbId": 1621552,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "17:00",
       "price": 20000
@@ -44,7 +125,7 @@
     {
       "id": "6",
       "tmdbId": 1323244,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "19:00",
       "price": 15000
@@ -52,7 +133,7 @@
     {
       "id": "7",
       "tmdbId": 1084244,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "14:30",
       "price": 18000
@@ -60,7 +141,7 @@
     {
       "id": "8",
       "tmdbId": 1339713,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "20:00",
       "price": 20000
@@ -68,7 +149,7 @@
     {
       "id": "9",
       "tmdbId": 1516698,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "21:30",
       "price": 15000
@@ -76,7 +157,7 @@
     {
       "id": "10",
       "tmdbId": 1108427,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "16:30",
       "price": 18000
@@ -84,7 +165,7 @@
     {
       "id": "11",
       "tmdbId": 1315772,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "15:00",
       "price": 20000
@@ -92,7 +173,7 @@
     {
       "id": "12",
       "tmdbId": 1375646,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "13:00",
       "price": 15000
@@ -100,7 +181,7 @@
     {
       "id": "13",
       "tmdbId": 1232569,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "19:30",
       "price": 18000
@@ -108,7 +189,7 @@
     {
       "id": "14",
       "tmdbId": 1083381,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "18:30",
       "price": 20000
@@ -116,7 +197,7 @@
     {
       "id": "15",
       "tmdbId": 1130948,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "17:30",
       "price": 15000
@@ -124,7 +205,7 @@
     {
       "id": "16",
       "tmdbId": 1212763,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "21:00",
       "price": 18000
@@ -132,7 +213,7 @@
     {
       "id": "17",
       "tmdbId": 1284465,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "14:00",
       "price": 20000
@@ -140,7 +221,7 @@
     {
       "id": "18",
       "tmdbId": 1284041,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "20:30",
       "price": 15000
@@ -148,7 +229,7 @@
     {
       "id": "19",
       "tmdbId": 87513,
-      "roomId": "2",
+      "roomId": 2,
       "date": "2026-08-28",
       "time": "22:00",
       "price": 18000
@@ -156,7 +237,7 @@
     {
       "id": "20",
       "tmdbId": 1101383,
-      "roomId": "3",
+      "roomId": 3,
       "date": "2026-08-28",
       "time": "16:00",
       "price": 20000
@@ -164,7 +245,7 @@
     {
       "id": "21",
       "tmdbId": 1523145,
-      "roomId": "1",
+      "roomId": 1,
       "date": "2026-08-28",
       "time": "18:00",
       "price": 15000
@@ -196,604 +277,951 @@
   "seats": [
     {
       "id": "1",
-      "roomId": "1",
+      "roomId": 1,
       "row": "A",
-      "seatNumber": 1,
-      "seatCode": "A1"
+      "number": 1,
+      "seatCode": "A1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
     },
     {
       "id": "2",
-      "roomId": "1",
+      "roomId": 1,
       "row": "A",
-      "seatNumber": 2,
-      "seatCode": "A2"
+      "number": 2,
+      "seatCode": "A2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
     },
     {
       "id": "3",
-      "roomId": "1",
+      "roomId": 1,
       "row": "A",
-      "seatNumber": 3,
-      "seatCode": "A3"
+      "number": 3,
+      "seatCode": "A3",
+      "location": "Frontal Centro",
+      "type": "standard"
     },
     {
       "id": "4",
-      "roomId": "1",
+      "roomId": 1,
       "row": "A",
-      "seatNumber": 4,
-      "seatCode": "A4"
+      "number": 4,
+      "seatCode": "A4",
+      "location": "Frontal Centro",
+      "type": "standard"
     },
     {
       "id": "5",
-      "roomId": "1",
-      "row": "B",
-      "seatNumber": 1,
-      "seatCode": "B1"
+      "roomId": 1,
+      "row": "A",
+      "number": 5,
+      "seatCode": "A5",
+      "location": "Frontal Derecha",
+      "type": "standard"
     },
     {
       "id": "6",
-      "roomId": "1",
-      "row": "B",
-      "seatNumber": 2,
-      "seatCode": "B2"
+      "roomId": 1,
+      "row": "A",
+      "number": 6,
+      "seatCode": "A6",
+      "location": "Frontal Derecha",
+      "type": "standard"
     },
     {
       "id": "7",
-      "roomId": "1",
+      "roomId": 1,
       "row": "B",
-      "seatNumber": 3,
-      "seatCode": "B3"
+      "number": 1,
+      "seatCode": "B1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
     },
     {
       "id": "8",
-      "roomId": "1",
+      "roomId": 1,
       "row": "B",
-      "seatNumber": 4,
-      "seatCode": "B4"
+      "number": 2,
+      "seatCode": "B2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
     },
     {
       "id": "9",
-      "roomId": "2",
-      "row": "A",
-      "seatNumber": 1,
-      "seatCode": "A1"
+      "roomId": 1,
+      "row": "B",
+      "number": 3,
+      "seatCode": "B3",
+      "location": "Frontal Centro",
+      "type": "standard"
     },
     {
       "id": "10",
-      "roomId": "2",
-      "row": "A",
-      "seatNumber": 2,
-      "seatCode": "A2"
+      "roomId": 1,
+      "row": "B",
+      "number": 4,
+      "seatCode": "B4",
+      "location": "Frontal Centro",
+      "type": "standard"
     },
     {
       "id": "11",
-      "roomId": "2",
-      "row": "A",
-      "seatNumber": 3,
-      "seatCode": "A3"
+      "roomId": 1,
+      "row": "B",
+      "number": 5,
+      "seatCode": "B5",
+      "location": "Frontal Derecha",
+      "type": "standard"
     },
     {
       "id": "12",
-      "roomId": "2",
-      "row": "A",
-      "seatNumber": 4,
-      "seatCode": "A4"
+      "roomId": 1,
+      "row": "B",
+      "number": 6,
+      "seatCode": "B6",
+      "location": "Frontal Derecha",
+      "type": "standard"
     },
     {
       "id": "13",
-      "roomId": "2",
-      "row": "B",
-      "seatNumber": 1,
-      "seatCode": "B1"
+      "roomId": 1,
+      "row": "C",
+      "number": 1,
+      "seatCode": "C1",
+      "location": "Media Izquierda",
+      "type": "standard"
     },
     {
       "id": "14",
-      "roomId": "2",
-      "row": "B",
-      "seatNumber": 2,
-      "seatCode": "B2"
+      "roomId": 1,
+      "row": "C",
+      "number": 2,
+      "seatCode": "C2",
+      "location": "Media Izquierda",
+      "type": "standard"
     },
     {
       "id": "15",
-      "roomId": "2",
-      "row": "B",
-      "seatNumber": 3,
-      "seatCode": "B3"
+      "roomId": 1,
+      "row": "C",
+      "number": 3,
+      "seatCode": "C3",
+      "location": "Media Centro",
+      "type": "standard"
     },
     {
       "id": "16",
-      "roomId": "2",
-      "row": "B",
-      "seatNumber": 4,
-      "seatCode": "B4"
+      "roomId": 1,
+      "row": "C",
+      "number": 4,
+      "seatCode": "C4",
+      "location": "Media Centro",
+      "type": "standard"
     },
     {
       "id": "17",
-      "roomId": "3",
-      "row": "A",
-      "seatNumber": 1,
-      "seatCode": "A1"
+      "roomId": 1,
+      "row": "C",
+      "number": 5,
+      "seatCode": "C5",
+      "location": "Media Derecha",
+      "type": "standard"
     },
     {
       "id": "18",
-      "roomId": "3",
-      "row": "A",
-      "seatNumber": 2,
-      "seatCode": "A2"
+      "roomId": 1,
+      "row": "C",
+      "number": 6,
+      "seatCode": "C6",
+      "location": "Media Derecha",
+      "type": "standard"
     },
     {
       "id": "19",
-      "roomId": "3",
-      "row": "A",
-      "seatNumber": 3,
-      "seatCode": "A3"
+      "roomId": 1,
+      "row": "D",
+      "number": 1,
+      "seatCode": "D1",
+      "location": "Posterior Izquierda",
+      "type": "standard"
     },
     {
       "id": "20",
-      "roomId": "3",
-      "row": "A",
-      "seatNumber": 4,
-      "seatCode": "A4"
+      "roomId": 1,
+      "row": "D",
+      "number": 2,
+      "seatCode": "D2",
+      "location": "Posterior Izquierda",
+      "type": "standard"
     },
     {
       "id": "21",
-      "roomId": "3",
-      "row": "B",
-      "seatNumber": 1,
-      "seatCode": "B1"
+      "roomId": 1,
+      "row": "D",
+      "number": 3,
+      "seatCode": "D3",
+      "location": "Posterior Centro",
+      "type": "standard"
     },
     {
       "id": "22",
-      "roomId": "3",
-      "row": "B",
-      "seatNumber": 2,
-      "seatCode": "B2"
+      "roomId": 1,
+      "row": "D",
+      "number": 4,
+      "seatCode": "D4",
+      "location": "Posterior Centro",
+      "type": "standard"
     },
     {
       "id": "23",
-      "roomId": "3",
-      "row": "B",
-      "seatNumber": 3,
-      "seatCode": "B3"
+      "roomId": 1,
+      "row": "D",
+      "number": 5,
+      "seatCode": "D5",
+      "location": "Posterior Derecha",
+      "type": "standard"
     },
     {
       "id": "24",
-      "roomId": "3",
+      "roomId": 1,
+      "row": "D",
+      "number": 6,
+      "seatCode": "D6",
+      "location": "Posterior Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "25",
+      "roomId": 2,
+      "row": "A",
+      "number": 1,
+      "seatCode": "A1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "26",
+      "roomId": 2,
+      "row": "A",
+      "number": 2,
+      "seatCode": "A2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "27",
+      "roomId": 2,
+      "row": "A",
+      "number": 3,
+      "seatCode": "A3",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "28",
+      "roomId": 2,
+      "row": "A",
+      "number": 4,
+      "seatCode": "A4",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "29",
+      "roomId": 2,
+      "row": "A",
+      "number": 5,
+      "seatCode": "A5",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "30",
+      "roomId": 2,
+      "row": "A",
+      "number": 6,
+      "seatCode": "A6",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "31",
+      "roomId": 2,
       "row": "B",
-      "seatNumber": 4,
-      "seatCode": "B4"
+      "number": 1,
+      "seatCode": "B1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "32",
+      "roomId": 2,
+      "row": "B",
+      "number": 2,
+      "seatCode": "B2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "33",
+      "roomId": 2,
+      "row": "B",
+      "number": 3,
+      "seatCode": "B3",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "34",
+      "roomId": 2,
+      "row": "B",
+      "number": 4,
+      "seatCode": "B4",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "35",
+      "roomId": 2,
+      "row": "B",
+      "number": 5,
+      "seatCode": "B5",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "36",
+      "roomId": 2,
+      "row": "B",
+      "number": 6,
+      "seatCode": "B6",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "37",
+      "roomId": 2,
+      "row": "C",
+      "number": 1,
+      "seatCode": "C1",
+      "location": "Media Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "38",
+      "roomId": 2,
+      "row": "C",
+      "number": 2,
+      "seatCode": "C2",
+      "location": "Media Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "39",
+      "roomId": 2,
+      "row": "C",
+      "number": 3,
+      "seatCode": "C3",
+      "location": "Media Centro",
+      "type": "standard"
+    },
+    {
+      "id": "40",
+      "roomId": 2,
+      "row": "C",
+      "number": 4,
+      "seatCode": "C4",
+      "location": "Media Centro",
+      "type": "standard"
+    },
+    {
+      "id": "41",
+      "roomId": 2,
+      "row": "C",
+      "number": 5,
+      "seatCode": "C5",
+      "location": "Media Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "42",
+      "roomId": 2,
+      "row": "C",
+      "number": 6,
+      "seatCode": "C6",
+      "location": "Media Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "43",
+      "roomId": 2,
+      "row": "D",
+      "number": 1,
+      "seatCode": "D1",
+      "location": "Posterior Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "44",
+      "roomId": 2,
+      "row": "D",
+      "number": 2,
+      "seatCode": "D2",
+      "location": "Posterior Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "45",
+      "roomId": 2,
+      "row": "D",
+      "number": 3,
+      "seatCode": "D3",
+      "location": "Posterior Centro",
+      "type": "standard"
+    },
+    {
+      "id": "46",
+      "roomId": 2,
+      "row": "D",
+      "number": 4,
+      "seatCode": "D4",
+      "location": "Posterior Centro",
+      "type": "standard"
+    },
+    {
+      "id": "47",
+      "roomId": 2,
+      "row": "D",
+      "number": 5,
+      "seatCode": "D5",
+      "location": "Posterior Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "48",
+      "roomId": 2,
+      "row": "D",
+      "number": 6,
+      "seatCode": "D6",
+      "location": "Posterior Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "49",
+      "roomId": 3,
+      "row": "A",
+      "number": 1,
+      "seatCode": "A1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "50",
+      "roomId": 3,
+      "row": "A",
+      "number": 2,
+      "seatCode": "A2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "51",
+      "roomId": 3,
+      "row": "A",
+      "number": 3,
+      "seatCode": "A3",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "52",
+      "roomId": 3,
+      "row": "A",
+      "number": 4,
+      "seatCode": "A4",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "53",
+      "roomId": 3,
+      "row": "A",
+      "number": 5,
+      "seatCode": "A5",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "54",
+      "roomId": 3,
+      "row": "A",
+      "number": 6,
+      "seatCode": "A6",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "55",
+      "roomId": 3,
+      "row": "B",
+      "number": 1,
+      "seatCode": "B1",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "56",
+      "roomId": 3,
+      "row": "B",
+      "number": 2,
+      "seatCode": "B2",
+      "location": "Frontal Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "57",
+      "roomId": 3,
+      "row": "B",
+      "number": 3,
+      "seatCode": "B3",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "58",
+      "roomId": 3,
+      "row": "B",
+      "number": 4,
+      "seatCode": "B4",
+      "location": "Frontal Centro",
+      "type": "standard"
+    },
+    {
+      "id": "59",
+      "roomId": 3,
+      "row": "B",
+      "number": 5,
+      "seatCode": "B5",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "60",
+      "roomId": 3,
+      "row": "B",
+      "number": 6,
+      "seatCode": "B6",
+      "location": "Frontal Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "61",
+      "roomId": 3,
+      "row": "C",
+      "number": 1,
+      "seatCode": "C1",
+      "location": "Media Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "62",
+      "roomId": 3,
+      "row": "C",
+      "number": 2,
+      "seatCode": "C2",
+      "location": "Media Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "63",
+      "roomId": 3,
+      "row": "C",
+      "number": 3,
+      "seatCode": "C3",
+      "location": "Media Centro",
+      "type": "standard"
+    },
+    {
+      "id": "64",
+      "roomId": 3,
+      "row": "C",
+      "number": 4,
+      "seatCode": "C4",
+      "location": "Media Centro",
+      "type": "standard"
+    },
+    {
+      "id": "65",
+      "roomId": 3,
+      "row": "C",
+      "number": 5,
+      "seatCode": "C5",
+      "location": "Media Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "66",
+      "roomId": 3,
+      "row": "C",
+      "number": 6,
+      "seatCode": "C6",
+      "location": "Media Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "67",
+      "roomId": 3,
+      "row": "D",
+      "number": 1,
+      "seatCode": "D1",
+      "location": "Posterior Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "68",
+      "roomId": 3,
+      "row": "D",
+      "number": 2,
+      "seatCode": "D2",
+      "location": "Posterior Izquierda",
+      "type": "standard"
+    },
+    {
+      "id": "69",
+      "roomId": 3,
+      "row": "D",
+      "number": 3,
+      "seatCode": "D3",
+      "location": "Posterior Centro",
+      "type": "standard"
+    },
+    {
+      "id": "70",
+      "roomId": 3,
+      "row": "D",
+      "number": 4,
+      "seatCode": "D4",
+      "location": "Posterior Centro",
+      "type": "standard"
+    },
+    {
+      "id": "71",
+      "roomId": 3,
+      "row": "D",
+      "number": 5,
+      "seatCode": "D5",
+      "location": "Posterior Derecha",
+      "type": "standard"
+    },
+    {
+      "id": "72",
+      "roomId": 3,
+      "row": "D",
+      "number": 6,
+      "seatCode": "D6",
+      "location": "Posterior Derecha",
+      "type": "standard"
     }
   ],
   "functionSeats": [
     {
       "id": "1",
       "functionId": 1,
-      "seatId": 1,
-      "status": "available"
+      "seatId": 4,
+      "seatCode": "A4",
+      "status": "sold"
     },
     {
       "id": "2",
       "functionId": 1,
-      "seatId": 2,
-      "status": "available"
+      "seatId": 8,
+      "seatCode": "B2",
+      "status": "reserved"
     },
     {
       "id": "3",
       "functionId": 1,
-      "seatId": 3,
+      "seatId": 15,
+      "seatCode": "C3",
       "status": "reserved"
     },
     {
       "id": "4",
       "functionId": 1,
-      "seatId": 4,
+      "seatId": 19,
+      "seatCode": "D1",
+      "status": "sold"
+    },
+    {
+      "id": "5",
+      "functionId": 1,
+      "seatId": 24,
+      "seatCode": "D6",
+      "status": "sold"
+    },
+    {
+      "id": "6",
+      "functionId": 2,
+      "seatId": 25,
+      "seatCode": "A1",
+      "status": "sold"
+    },
+    {
+      "id": "7",
+      "functionId": 2,
+      "seatId": 34,
+      "seatCode": "B4",
+      "status": "sold"
+    },
+    {
+      "id": "8",
+      "functionId": 2,
+      "seatId": 41,
+      "seatCode": "C5",
+      "status": "reserved"
+    },
+    {
+      "id": "9",
+      "functionId": 3,
+      "seatId": 9,
+      "seatCode": "B3",
+      "status": "reserved"
+    },
+    {
+      "id": "10",
+      "functionId": 3,
+      "seatId": 23,
+      "seatCode": "D5",
+      "status": "sold"
+    },
+    {
+      "id": "11",
+      "functionId": 5,
+      "seatId": 50,
+      "seatCode": "A2",
       "status": "sold"
     },
     {
       "functionId": 1,
-      "seatCode": "C3",
-      "status": "sold",
-      "id": "_1lx0hecU1g"
+      "seatId": 2,
+      "seatCode": "A2",
+      "status": "reserved",
+      "id": "MmvLMNDeku4"
     },
     {
       "functionId": 1,
-      "seatCode": "C2",
-      "status": "sold",
-      "id": "uyZ5u8XRblI"
+      "seatId": 3,
+      "seatCode": "A3",
+      "status": "reserved",
+      "id": "yqXc1pp_yqM"
     },
     {
       "functionId": 1,
-      "seatCode": "C1",
-      "status": "sold",
-      "id": "DkcK3hzoYdI"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "D1",
-      "status": "sold",
-      "id": "zETSUYPIk18"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "D2",
-      "status": "sold",
-      "id": "NR0fyLZDWAU"
-    },
-    {
-      "functionId": 1,
+      "seatId": 21,
       "seatCode": "D3",
       "status": "sold",
-      "id": "MjPuTNKUzMM"
+      "id": "MuSo8MTlMlQ"
     },
     {
       "functionId": 1,
-      "seatCode": "D4",
-      "status": "sold",
-      "id": "djWk0GcDJxo"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "D5",
-      "status": "sold",
-      "id": "8fi0pDyeQzc"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "D6",
-      "status": "sold",
-      "id": "r2CcN00fJpg"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "C6",
-      "status": "sold",
-      "id": "LCtRQcnULIg"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "B2",
-      "status": "sold",
-      "id": "1vuJZWjk67c"
-    },
-    {
-      "functionId": 1,
-      "seatCode": "B5",
-      "status": "sold",
-      "id": "lnXpgo4c98I"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "B3",
-      "status": "sold",
-      "id": "P28jilp_QQ8"
-    },
-    {
-      "functionId": "1",
+      "seatId": 16,
       "seatCode": "C4",
       "status": "sold",
-      "id": "sW8LsDOrBI0"
+      "id": "Vj1eu6NaASo"
     },
     {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "44NUJ3gD94k"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "kQKWDfBxSAs"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "gSv-GdgVEIA"
-    },
-    {
-      "functionId": "1",
+      "functionId": 1,
+      "seatId": 17,
       "seatCode": "C5",
       "status": "sold",
-      "id": "INlP6ktWXcY"
+      "id": "xLtEdO7zIqw"
     },
     {
-      "functionId": "1",
-      "seatCode": "C4",
+      "functionId": 1,
+      "seatId": 9,
+      "seatCode": "B3",
       "status": "sold",
-      "id": "_fgMnLpUpQE"
+      "id": "Cc2FlevDID0"
     },
     {
-      "functionId": "1",
-      "seatCode": "C4",
+      "functionId": 1,
+      "seatId": 10,
+      "seatCode": "B4",
       "status": "sold",
-      "id": "LVSIoVIvBCI"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "_YUIB4Ylmw4"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "9l6GpausNtU"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "t9tSeHmiow4"
-    },
-    {
-      "functionId": "3",
-      "seatCode": "D2",
-      "status": "sold",
-      "id": "Ue484fXEWWE"
-    },
-    {
-      "functionId": "3",
-      "seatCode": "D4",
-      "status": "sold",
-      "id": "KDLvXDPUrlM"
-    },
-    {
-      "functionId": "3",
-      "seatCode": "D5",
-      "status": "sold",
-      "id": "FLzYj6wKwOU"
-    },
-    {
-      "functionId": "1",
-      "seatCode": "C4",
-      "status": "sold",
-      "id": "hpO6VWW5l8o"
+      "id": "mX7X6LdYCdY"
     }
   ],
   "reservations": [
     {
-      "functionId": 1,
-      "seats": [
-        "A4"
-      ],
-      "date": "2026-08-28",
-      "id": "h2lRDxpzGWc"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "A4"
-      ],
-      "date": "2026-08-28",
-      "id": "rz6ZUQAqgEU"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "A4"
-      ],
-      "date": "2026-08-28",
-      "id": "vZPrTxmdOBI"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "C3"
-      ],
-      "date": "2026-08-28T01:16:31.611Z",
-      "id": "gmyvGF5_4kA"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "C2"
-      ],
-      "date": "2026-08-28T01:26:57.041Z",
-      "id": "0i_GAt3wSp8"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "C1"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:27:27.329Z",
-      "id": "sT75RVCxmJg"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "D1"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:27:31.951Z",
-      "id": "VakkGXnk5lU"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "D2"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:27:35.944Z",
-      "id": "W1BB0cAkxN8"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "D3"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:29:38.258Z",
-      "id": "8rX12Nw66fU"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "D4",
-        "D5",
-        "D6",
-        "C6"
-      ],
-      "total": 60000,
-      "date": "2026-08-28T01:30:12.758Z",
-      "id": "XEs_1a_DPNY"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "B2"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:31:03.707Z",
-      "id": "IiFFhfj10VY"
-    },
-    {
-      "functionId": 1,
-      "seats": [
-        "B5"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:31:24.555Z",
-      "id": "uiis-u_L8Dw"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "B3"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:33:34.204Z",
-      "id": "cmrg4GdUX-k"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:33:43.692Z",
-      "id": "rTke88hkQUY"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:34:02.622Z",
-      "id": "fX-Uvx8OLHw"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:35:07.360Z",
-      "id": "pKeDEOa-MEQ"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:37:05.744Z",
-      "id": "Wthf2rJ1i9U"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C5",
-        "C4"
-      ],
-      "total": 30000,
-      "date": "2026-08-28T01:45:17.101Z",
-      "id": "r5ugKr3FjQs"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:48:59.422Z",
-      "id": "igSOZcATSIM"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:49:04.195Z",
-      "id": "kMnGp7WccGA"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:53:08.511Z",
-      "id": "KwtfVUT8_oU"
-    },
-    {
-      "functionId": "1",
-      "seats": [
-        "C4"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:55:06.778Z",
-      "id": "VoPgimLDez0"
-    },
-    {
-      "functionId": "3",
-      "seats": [
-        "D2"
-      ],
-      "total": 15000,
-      "date": "2026-08-28T01:56:30.504Z",
-      "id": "TMR0hI_vWBY"
-    },
-    {
-      "functionId": "3",
-      "seats": [
-        "D4",
-        "D5"
-      ],
-      "total": 30000,
-      "date": "2026-08-28T01:56:36.975Z",
-      "id": "g5u732YfpRk"
-    },
-    {
-      "userName": "Samuel Florez Gomez",
-      "email": "samuelflorezgomez6",
-      "functionId": "1",
+      "id": "101",
+      "userName": "Juan Pérez",
+      "email": "juan@email.com",
       "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
       "quantity": 1,
       "seats": [
         {
-          "seatCode": "C4",
-          "location": "Centro Centro"
+          "seatId": 8,
+          "seatCode": "B2",
+          "location": "Frontal Centro"
         }
       ],
       "total": 15000,
-      "date": "2026-08-28T02:01:28.133Z",
+      "date": "2026-08-28T10:12:00.000Z",
+      "status": "confirmed"
+    },
+    {
+      "id": "102",
+      "userName": "Ana Torres",
+      "email": "ana@email.com",
+      "tmdbId": 1368337,
+      "functionId": 3,
+      "roomId": 1,
+      "quantity": 1,
+      "seats": [
+        {
+          "seatId": 9,
+          "seatCode": "B3",
+          "location": "Frontal Derecha"
+        }
+      ],
+      "total": 15000,
+      "date": "2026-08-28T10:20:00.000Z",
+      "status": "confirmed"
+    },
+    {
+      "userName": "Alejandro",
+      "email": "josealejandro.6223@gmail.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 2,
+      "seats": [
+        {
+          "seatId": 2,
+          "seatCode": "A2",
+          "location": "Frontal Izquierda"
+        },
+        {
+          "seatId": 3,
+          "seatCode": "A3",
+          "location": "Frontal Centro"
+        }
+      ],
+      "total": 30000,
+      "date": "2026-08-28T18:02:06.491Z",
       "status": "confirmed",
-      "id": "xBZywY0WT6o"
+      "id": "HOXsBAU1mfs"
     }
   ],
-  "purchases": [],
+  "purchases": [
+    {
+      "id": "201",
+      "userName": "María López",
+      "email": "maria@email.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 1,
+      "seats": [
+        {
+          "seatId": 4,
+          "seatCode": "A4",
+          "location": "Frontal Derecha"
+        }
+      ],
+      "total": 15000,
+      "date": "2026-08-28T10:30:00.000Z",
+      "status": "completed"
+    },
+    {
+      "id": "202",
+      "userName": "Carlos Pérez",
+      "email": "carlos@email.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 2,
+      "seats": [
+        {
+          "seatId": 19,
+          "seatCode": "D1",
+          "location": "Posterior Izquierda"
+        },
+        {
+          "seatId": 24,
+          "seatCode": "D6",
+          "location": "Posterior Derecha"
+        }
+      ],
+      "total": 30000,
+      "date": "2026-08-28T10:45:00.000Z",
+      "status": "completed"
+    },
+    {
+      "userName": "sgsdggsd",
+      "email": "sfdfsfsdfs@gmail.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 3,
+      "seats": [
+        {
+          "seatId": 21,
+          "seatCode": "D3",
+          "location": "Posterior Centro"
+        },
+        {
+          "seatId": 16,
+          "seatCode": "C4",
+          "location": "Media Centro"
+        },
+        {
+          "seatId": 17,
+          "seatCode": "C5",
+          "location": "Media Derecha"
+        }
+      ],
+      "total": 45000,
+      "date": "2026-08-28T22:53:26.914Z",
+      "status": "completed",
+      "id": "-txfBEsQuvk"
+    },
+    {
+      "userName": "samuel",
+      "email": "samuel@gmail.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 2,
+      "seats": [
+        {
+          "seatId": 9,
+          "seatCode": "B3",
+          "location": "Frontal Centro"
+        },
+        {
+          "seatId": 10,
+          "seatCode": "B4",
+          "location": "Frontal Centro"
+        }
+      ],
+      "total": 30000,
+      "date": "2026-08-28T23:22:22.596Z",
+      "status": "completed",
+      "id": "Cl8dt9htZos"
+    }
+  ],
   "ratings": [
     {
+      "id": "301",
       "tmdbId": 969681,
-      "score": 2,
-      "comment": "horrible",
-      "date": "2026-08-28T02:06:45.820Z",
-      "id": "O-9HtM_Z_-s"
+      "score": 4,
+      "comment": "Excelente película, muy recomendada.",
+      "date": "2026-08-28T02:06:45.820Z"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

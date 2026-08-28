@@ -3,64 +3,177 @@ import { TMDB_TOKEN } from "./config.js";
 const LOCAL_API_URL = "http://localhost:3000";
 const TMDB_API_URL = "https://api.themoviedb.org/3";
 
-export async function getRooms() {
-    const response = await fetch(`${LOCAL_API_URL}/rooms`);
-    return await response.json();
+async function tmdbFetch(endpoint) {
+    const response = await fetch(`${TMDB_API_URL}${endpoint}`, {
+        headers: { Authorization: `Bearer ${TMDB_TOKEN}` }
+    });
+    if (!response.ok) throw new Error(`TMDB error ${response.status}`);
+    return response.json();
 }
 
-export async function getNowPlayingMovies() {
-    const response = await fetch(
-        `${TMDB_API_URL}/movie/now_playing?language=es-ES`,
-        {
-            headers: {
-                Authorization: `Bearer ${TMDB_TOKEN}`
+function num(value) {
+    const n = Number(value);
+    return Number.isFinite(n) ? n : value;
+}
+
+function normalizeIds(value) {
+    if (Array.isArray(value)) return value.map(normalizeIds);
+    if (value && typeof value === "object") {
+        const out = { ...value };
+        for (const key of Object.keys(out)) {
+            if (key === "id" && typeof out[key] === "string" && out[key].trim() !== "" && !Number.isNaN(Number(out[key]))) {
+                out[key] = Number(out[key]);
+            } else {
+                out[key] = normalizeIds(out[key]);
             }
         }
-    );
-    const data = await response.json();
+        return out;
+    }
+    return value;
+}
+
+async function localFetch(endpoint) {
+    const response = await fetch(`${LOCAL_API_URL}${endpoint}`);
+    if (!response.ok) throw new Error(`API error ${response.status} en ${endpoint}`);
+    return normalizeIds(await response.json());
+}
+
+/* ------------------------- TMDB ------------------------- */
+
+export async function getNowPlayingMovies() {
+    const data = await tmdbFetch("/movie/now_playing?language=es-ES");
     return data.results;
 }
 
-export async function getFunctionsByMovie(tmdbId) {
-    const response = await fetch(`${LOCAL_API_URL}/functions?tmdbId=${tmdbId}`);
-    return await response.json();
+export async function getPopularMovies() {
+    const data = await tmdbFetch("/movie/popular?language=es-ES");
+    return data.results;
+}
+
+export async function getMovieGenres() {
+    const data = await tmdbFetch("/genre/movie/list?language=es-ES");
+    return data.genres;
+}
+
+export async function getMovieDetails(movieId) {
+    return tmdbFetch(`/movie/${movieId}?language=es-ES`);
+}
+
+export async function getMovieCredits(movieId) {
+    return tmdbFetch(`/movie/${movieId}/credits?language=es-ES`);
+}
+
+export async function getMovieTrailers(movieId) {
+    const data = await tmdbFetch(`/movie/${movieId}/videos?language=es-ES`);
+    return data.results;
+}
+
+/* ----------------------- JSON Server ----------------------- */
+
+export async function getRooms() {
+    return localFetch("/rooms");
 }
 
 export async function getRoomById(roomId) {
-    const response = await fetch(`${LOCAL_API_URL}/rooms/${roomId}`);
-    return await response.json();
+    return localFetch(`/rooms/${roomId}`);
+}
+
+export async function getFunctions() {
+    return localFetch("/functions");
+}
+
+export async function getFunctionsByMovie(tmdbId) {
+    return localFetch(`/functions?tmdbId=${num(tmdbId)}`);
+}
+
+export async function getFunctionById(functionId) {
+    return localFetch(`/functions/${num(functionId)}`);
 }
 
 export async function getSeatsByRoom(roomId) {
-    const response = await fetch(`${LOCAL_API_URL}/seats?roomId=${roomId}`);
-    return await response.json();
+    return localFetch(`/seats?roomId=${num(roomId)}`);
 }
 
 export async function getFunctionSeats(functionId) {
-    const response = await fetch(`${LOCAL_API_URL}/functionSeats?functionId=${functionId}`);
-    return await response.json();
+    return localFetch(`/functionSeats?functionId=${num(functionId)}`);
+}
+
+export async function getAllFunctionSeats() {
+    return localFetch("/functionSeats");
+}
+
+export async function getSeatAvailability(functionId, seat) {
+    const byIdResponse = await fetch(`${LOCAL_API_URL}/functionSeats?functionId=${num(functionId)}&seatId=${num(seat.seatId)}`);
+    const idList = normalizeIds(await byIdResponse.json());
+    if (idList.length > 0) return idList[0];
+
+    const byCodeResponse = await fetch(`${LOCAL_API_URL}/functionSeats?functionId=${num(functionId)}&seatCode=${seat.seatCode}`);
+    const codeList = normalizeIds(await byCodeResponse.json());
+    if (codeList.length > 0) return codeList[0];
+
+    return null;
+}
+
+export async function updateFunctionSeatStatus(functionId, seat, status) {
+    const existing = await getSeatAvailability(functionId, seat);
+
+    if (existing && existing.id) {
+        const response = await fetch(`${LOCAL_API_URL}/functionSeats/${existing.id}`, {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ status })
+        });
+        return normalizeIds(await response.json());
+    }
+
+    const response = await fetch(`${LOCAL_API_URL}/functionSeats`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            functionId: num(functionId),
+            seatId: num(seat.seatId),
+            seatCode: seat.seatCode,
+            status
+        })
+    });
+    return normalizeIds(await response.json());
+}
+
+export async function saveReservation(reservationData) {
+    const response = await fetch(`${LOCAL_API_URL}/reservations`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(reservationData)
+    });
+    return normalizeIds(await response.json());
+}
+
+export async function savePurchase(purchaseData) {
+    const response = await fetch(`${LOCAL_API_URL}/purchases`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(purchaseData)
+    });
+    return normalizeIds(await response.json());
 }
 
 export async function saveRating(ratingData) {
     try {
         const response = await fetch(`${LOCAL_API_URL}/ratings`, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(ratingData)
         });
-        return await response.json();
+        return normalizeIds(await response.json());
     } catch (error) {
         console.error("Error al guardar la calificación:", error);
     }
 }
 
-// NUEVA FUNCIÓN: Obtener valoraciones de una película específica
 export async function getRatingsByMovie(tmdbId) {
     try {
-        const response = await fetch(`${LOCAL_API_URL}/ratings?tmdbId=${tmdbId}`);
-        return await response.json();
+        const response = await fetch(`${LOCAL_API_URL}/ratings?tmdbId=${num(tmdbId)}`);
+        return normalizeIds(await response.json());
     } catch (error) {
         console.error("Error al obtener calificaciones:", error);
         return [];
