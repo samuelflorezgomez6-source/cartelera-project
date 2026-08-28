@@ -3,13 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera de Cine</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Cine Colombia</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <h1>Cartelera de Cine</h1>
-    <script type="module" src="./js/main.js"></script>
+    <header>
+        <h1>🎬 Cine Colombia</h1>
+    </header>
+
+    <main>
+        <!-- Sección Cartelera -->
+        <section id="cartelera-section">
+            <h2>Películas en Cartelera</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar película por título...">
+            </div>
+            <div id="movies-container" class="movies-grid"></div>
+        </section>
+
+        <!-- Sección Salas (Mantiene tu función loadRooms) -->
+        <section id="salas-section">
+            <h2>Salas Disponibles</h2>
+            <div id="rooms-container" class="rooms-grid"></div>
+        </section>
+
+        <!-- Sección Detalle de Película -->
+        <section id="movie-detail-section" style="display: none;">
+            <button type="button" id="back-to-movies-btn">← Volver a la cartelera</button>
+            <div id="movie-detail-content" class="movie-detail-container"></div>
+
+            <!-- Módulo de Valoración -->
+            <div id="rating-module" style="margin-top: 30px; background: var(--bg-card); padding: 20px; border-radius: 8px;">
+                <h3>⭐ Calificar esta película</h3>
+                <form id="rating-form">
+                    <div style="margin-bottom: 10px;">
+                        <label for="rating-stars">Puntuación:</label>
+                        <select id="rating-stars" class="custom-input" required>
+                            <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                            <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                            <option value="3">⭐⭐⭐ (3/5)</option>
+                            <option value="2">⭐⭐ (2/5)</option>
+                            <option value="1">⭐ (1/5)</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <label for="rating-comment">Comentario:</label>
+                        <textarea id="rating-comment" class="custom-input" rows="3" placeholder="Escribe tu opinión..."></textarea>
+                    </div>
+                    <button type="submit" class="select-function-btn">Enviar Valoración</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección Mapa de Sillas -->
+        <section id="seats-map-section" style="display: none;">
+            <button type="button" id="back-to-detail-btn">← Volver al detalle</button>
+            <h2>Selecciona tus asientos</h2>
+
+            <div class="screen-container">
+                <div class="screen">PANTALLA</div>
+            </div>
+
+            <div class="seats-legend">
+                <div><span class="seat-sample available"></span> Disponible</div>
+                <div><span class="seat-sample selected"></span> Seleccionado</div>
+                <div><span class="seat-sample sold"></span> Ocupado</div>
+            </div>
+
+            <div id="seats-container" class="seats-grid"></div>
+
+            <div style="margin-top: 20px; background: var(--bg-card); padding: 20px; border-radius: 8px;">
+                <p><strong>Asientos seleccionados:</strong> <span id="selected-seats-text">Ninguna</span></p>
+                <div style="display: flex; gap: 10px; margin: 15px 0;">
+                    <input type="text" id="user-name" class="custom-input" placeholder="Tu Nombre" required>
+                    <input type="email" id="user-email" class="custom-input" placeholder="Tu Correo" required>
+                </div>
+                <button type="button" id="confirm-booking-btn" class="select-function-btn" style="width: 100%; font-size: 1rem;" disabled>Confirmar Reserva</button>
+            </div>
+        </section>
+
+        <!-- Sección Recibo / Ticket -->
+        <section id="receipt-section" style="display: none;">
+            <div style="background: var(--bg-card); padding: 25px; border-radius: 8px; max-width: 500px; margin: 0 auto; border: 1px solid var(--border-color);">
+                <h2>🎟️ Comprobante de Reserva</h2>
+                <div id="receipt-content"></div>
+                <button type="button" id="finish-booking-btn" class="select-function-btn" style="width: 100%; margin-top: 20px;">Finalizar y Volver</button>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
