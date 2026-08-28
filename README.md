@@ -1,5 +1,6 @@
 # 🎬 Cine Colombia - Plataforma de Reservas & Cartelera (Netflix Edition)
 
+Link a la pagina: https://cartelera-project.netlify.app/
 ¡Bienvenido al sistema de gestión y reserva de entradas para cine! 🎥
 
 Esta aplicación web interactiva permite consultar la cartelera de películas, seleccionar salas, elegir asientos mediante un mapa interactivo y procesar reservas con la generación de un comprobante digital.
