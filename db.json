@@ -1,0 +1,800 @@
+{
+  "billboard": [],
+  "functions": [
+    {
+      "id": "1",
+      "tmdbId": 969681,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "14:00",
+      "price": 15000
+    },
+    {
+      "id": "2",
+      "tmdbId": 969681,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "18:00",
+      "price": 18000
+    },
+    {
+      "id": "3",
+      "tmdbId": 1368337,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "15:30",
+      "price": 15000
+    },
+    {
+      "id": "4",
+      "tmdbId": 1288445,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "16:00",
+      "price": 16000
+    },
+    {
+      "id": "5",
+      "tmdbId": 1621552,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "17:00",
+      "price": 20000
+    },
+    {
+      "id": "6",
+      "tmdbId": 1323244,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "19:00",
+      "price": 15000
+    },
+    {
+      "id": "7",
+      "tmdbId": 1084244,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "14:30",
+      "price": 18000
+    },
+    {
+      "id": "8",
+      "tmdbId": 1339713,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "20:00",
+      "price": 20000
+    },
+    {
+      "id": "9",
+      "tmdbId": 1516698,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "21:30",
+      "price": 15000
+    },
+    {
+      "id": "10",
+      "tmdbId": 1108427,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "16:30",
+      "price": 18000
+    },
+    {
+      "id": "11",
+      "tmdbId": 1315772,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "15:00",
+      "price": 20000
+    },
+    {
+      "id": "12",
+      "tmdbId": 1375646,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "13:00",
+      "price": 15000
+    },
+    {
+      "id": "13",
+      "tmdbId": 1232569,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "19:30",
+      "price": 18000
+    },
+    {
+      "id": "14",
+      "tmdbId": 1083381,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "18:30",
+      "price": 20000
+    },
+    {
+      "id": "15",
+      "tmdbId": 1130948,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "17:30",
+      "price": 15000
+    },
+    {
+      "id": "16",
+      "tmdbId": 1212763,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "21:00",
+      "price": 18000
+    },
+    {
+      "id": "17",
+      "tmdbId": 1284465,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "14:00",
+      "price": 20000
+    },
+    {
+      "id": "18",
+      "tmdbId": 1284041,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "20:30",
+      "price": 15000
+    },
+    {
+      "id": "19",
+      "tmdbId": 87513,
+      "roomId": "2",
+      "date": "2026-08-28",
+      "time": "22:00",
+      "price": 18000
+    },
+    {
+      "id": "20",
+      "tmdbId": 1101383,
+      "roomId": "3",
+      "date": "2026-08-28",
+      "time": "16:00",
+      "price": 20000
+    },
+    {
+      "id": "21",
+      "tmdbId": 1523145,
+      "roomId": "1",
+      "date": "2026-08-28",
+      "time": "18:00",
+      "price": 15000
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Sala 1",
+      "rows": 4,
+      "seatsPerRow": 6,
+      "capacity": 24
+    },
+    {
+      "id": "2",
+      "name": "Sala 2",
+      "rows": 4,
+      "seatsPerRow": 6,
+      "capacity": 24
+    },
+    {
+      "id": "3",
+      "name": "Sala 3",
+      "rows": 4,
+      "seatsPerRow": 6,
+      "capacity": 24
+    }
+  ],
+  "seats": [
+    {
+      "id": "1",
+      "roomId": "1",
+      "row": "A",
+      "seatNumber": 1,
+      "seatCode": "A1"
+    },
+    {
+      "id": "2",
+      "roomId": "1",
+      "row": "A",
+      "seatNumber": 2,
+      "seatCode": "A2"
+    },
+    {
+      "id": "3",
+      "roomId": "1",
+      "row": "A",
+      "seatNumber": 3,
+      "seatCode": "A3"
+    },
+    {
+      "id": "4",
+      "roomId": "1",
+      "row": "A",
+      "seatNumber": 4,
+      "seatCode": "A4"
+    },
+    {
+      "id": "5",
+      "roomId": "1",
+      "row": "B",
+      "seatNumber": 1,
+      "seatCode": "B1"
+    },
+    {
+      "id": "6",
+      "roomId": "1",
+      "row": "B",
+      "seatNumber": 2,
+      "seatCode": "B2"
+    },
+    {
+      "id": "7",
+      "roomId": "1",
+      "row": "B",
+      "seatNumber": 3,
+      "seatCode": "B3"
+    },
+    {
+      "id": "8",
+      "roomId": "1",
+      "row": "B",
+      "seatNumber": 4,
+      "seatCode": "B4"
+    },
+    {
+      "id": "9",
+      "roomId": "2",
+      "row": "A",
+      "seatNumber": 1,
+      "seatCode": "A1"
+    },
+    {
+      "id": "10",
+      "roomId": "2",
+      "row": "A",
+      "seatNumber": 2,
+      "seatCode": "A2"
+    },
+    {
+      "id": "11",
+      "roomId": "2",
+      "row": "A",
+      "seatNumber": 3,
+      "seatCode": "A3"
+    },
+    {
+      "id": "12",
+      "roomId": "2",
+      "row": "A",
+      "seatNumber": 4,
+      "seatCode": "A4"
+    },
+    {
+      "id": "13",
+      "roomId": "2",
+      "row": "B",
+      "seatNumber": 1,
+      "seatCode": "B1"
+    },
+    {
+      "id": "14",
+      "roomId": "2",
+      "row": "B",
+      "seatNumber": 2,
+      "seatCode": "B2"
+    },
+    {
+      "id": "15",
+      "roomId": "2",
+      "row": "B",
+      "seatNumber": 3,
+      "seatCode": "B3"
+    },
+    {
+      "id": "16",
+      "roomId": "2",
+      "row": "B",
+      "seatNumber": 4,
+      "seatCode": "B4"
+    },
+    {
+      "id": "17",
+      "roomId": "3",
+      "row": "A",
+      "seatNumber": 1,
+      "seatCode": "A1"
+    },
+    {
+      "id": "18",
+      "roomId": "3",
+      "row": "A",
+      "seatNumber": 2,
+      "seatCode": "A2"
+    },
+    {
+      "id": "19",
+      "roomId": "3",
+      "row": "A",
+      "seatNumber": 3,
+      "seatCode": "A3"
+    },
+    {
+      "id": "20",
+      "roomId": "3",
+      "row": "A",
+      "seatNumber": 4,
+      "seatCode": "A4"
+    },
+    {
+      "id": "21",
+      "roomId": "3",
+      "row": "B",
+      "seatNumber": 1,
+      "seatCode": "B1"
+    },
+    {
+      "id": "22",
+      "roomId": "3",
+      "row": "B",
+      "seatNumber": 2,
+      "seatCode": "B2"
+    },
+    {
+      "id": "23",
+      "roomId": "3",
+      "row": "B",
+      "seatNumber": 3,
+      "seatCode": "B3"
+    },
+    {
+      "id": "24",
+      "roomId": "3",
+      "row": "B",
+      "seatNumber": 4,
+      "seatCode": "B4"
+    }
+  ],
+  "functionSeats": [
+    {
+      "id": "1",
+      "functionId": 1,
+      "seatId": 1,
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "functionId": 1,
+      "seatId": 2,
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "functionId": 1,
+      "seatId": 3,
+      "status": "reserved"
+    },
+    {
+      "id": "4",
+      "functionId": 1,
+      "seatId": 4,
+      "status": "sold"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "C3",
+      "status": "sold",
+      "id": "_1lx0hecU1g"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "C2",
+      "status": "sold",
+      "id": "uyZ5u8XRblI"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "C1",
+      "status": "sold",
+      "id": "DkcK3hzoYdI"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D1",
+      "status": "sold",
+      "id": "zETSUYPIk18"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D2",
+      "status": "sold",
+      "id": "NR0fyLZDWAU"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D3",
+      "status": "sold",
+      "id": "MjPuTNKUzMM"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D4",
+      "status": "sold",
+      "id": "djWk0GcDJxo"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D5",
+      "status": "sold",
+      "id": "8fi0pDyeQzc"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "D6",
+      "status": "sold",
+      "id": "r2CcN00fJpg"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "C6",
+      "status": "sold",
+      "id": "LCtRQcnULIg"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "B2",
+      "status": "sold",
+      "id": "1vuJZWjk67c"
+    },
+    {
+      "functionId": 1,
+      "seatCode": "B5",
+      "status": "sold",
+      "id": "lnXpgo4c98I"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "B3",
+      "status": "sold",
+      "id": "P28jilp_QQ8"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "sW8LsDOrBI0"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "44NUJ3gD94k"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "kQKWDfBxSAs"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "gSv-GdgVEIA"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C5",
+      "status": "sold",
+      "id": "INlP6ktWXcY"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "_fgMnLpUpQE"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "LVSIoVIvBCI"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "_YUIB4Ylmw4"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "9l6GpausNtU"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "t9tSeHmiow4"
+    },
+    {
+      "functionId": "3",
+      "seatCode": "D2",
+      "status": "sold",
+      "id": "Ue484fXEWWE"
+    },
+    {
+      "functionId": "3",
+      "seatCode": "D4",
+      "status": "sold",
+      "id": "KDLvXDPUrlM"
+    },
+    {
+      "functionId": "3",
+      "seatCode": "D5",
+      "status": "sold",
+      "id": "FLzYj6wKwOU"
+    },
+    {
+      "functionId": "1",
+      "seatCode": "C4",
+      "status": "sold",
+      "id": "hpO6VWW5l8o"
+    }
+  ],
+  "reservations": [
+    {
+      "functionId": 1,
+      "seats": [
+        "A4"
+      ],
+      "date": "2026-08-28",
+      "id": "h2lRDxpzGWc"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "A4"
+      ],
+      "date": "2026-08-28",
+      "id": "rz6ZUQAqgEU"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "A4"
+      ],
+      "date": "2026-08-28",
+      "id": "vZPrTxmdOBI"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "C3"
+      ],
+      "date": "2026-08-28T01:16:31.611Z",
+      "id": "gmyvGF5_4kA"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "C2"
+      ],
+      "date": "2026-08-28T01:26:57.041Z",
+      "id": "0i_GAt3wSp8"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "C1"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:27:27.329Z",
+      "id": "sT75RVCxmJg"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "D1"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:27:31.951Z",
+      "id": "VakkGXnk5lU"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "D2"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:27:35.944Z",
+      "id": "W1BB0cAkxN8"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "D3"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:29:38.258Z",
+      "id": "8rX12Nw66fU"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "D4",
+        "D5",
+        "D6",
+        "C6"
+      ],
+      "total": 60000,
+      "date": "2026-08-28T01:30:12.758Z",
+      "id": "XEs_1a_DPNY"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "B2"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:31:03.707Z",
+      "id": "IiFFhfj10VY"
+    },
+    {
+      "functionId": 1,
+      "seats": [
+        "B5"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:31:24.555Z",
+      "id": "uiis-u_L8Dw"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "B3"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:33:34.204Z",
+      "id": "cmrg4GdUX-k"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:33:43.692Z",
+      "id": "rTke88hkQUY"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:34:02.622Z",
+      "id": "fX-Uvx8OLHw"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:35:07.360Z",
+      "id": "pKeDEOa-MEQ"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:37:05.744Z",
+      "id": "Wthf2rJ1i9U"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C5",
+        "C4"
+      ],
+      "total": 30000,
+      "date": "2026-08-28T01:45:17.101Z",
+      "id": "r5ugKr3FjQs"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:48:59.422Z",
+      "id": "igSOZcATSIM"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:49:04.195Z",
+      "id": "kMnGp7WccGA"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:53:08.511Z",
+      "id": "KwtfVUT8_oU"
+    },
+    {
+      "functionId": "1",
+      "seats": [
+        "C4"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:55:06.778Z",
+      "id": "VoPgimLDez0"
+    },
+    {
+      "functionId": "3",
+      "seats": [
+        "D2"
+      ],
+      "total": 15000,
+      "date": "2026-08-28T01:56:30.504Z",
+      "id": "TMR0hI_vWBY"
+    },
+    {
+      "functionId": "3",
+      "seats": [
+        "D4",
+        "D5"
+      ],
+      "total": 30000,
+      "date": "2026-08-28T01:56:36.975Z",
+      "id": "g5u732YfpRk"
+    },
+    {
+      "userName": "Samuel Florez Gomez",
+      "email": "samuelflorezgomez6",
+      "functionId": "1",
+      "tmdbId": 969681,
+      "quantity": 1,
+      "seats": [
+        {
+          "seatCode": "C4",
+          "location": "Centro Centro"
+        }
+      ],
+      "total": 15000,
+      "date": "2026-08-28T02:01:28.133Z",
+      "status": "confirmed",
+      "id": "xBZywY0WT6o"
+    }
+  ],
+  "purchases": [],
+  "ratings": [
+    {
+      "tmdbId": 969681,
+      "score": 2,
+      "comment": "horrible",
+      "date": "2026-08-28T02:06:45.820Z",
+      "id": "O-9HtM_Z_-s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
