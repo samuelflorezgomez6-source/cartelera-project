@@ -390,7 +390,7 @@
       "number": 1,
       "seatCode": "C1",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "14",
@@ -399,7 +399,7 @@
       "number": 2,
       "seatCode": "C2",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "15",
@@ -408,7 +408,7 @@
       "number": 3,
       "seatCode": "C3",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "16",
@@ -417,7 +417,7 @@
       "number": 4,
       "seatCode": "C4",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "17",
@@ -426,7 +426,7 @@
       "number": 5,
       "seatCode": "C5",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "18",
@@ -435,7 +435,7 @@
       "number": 6,
       "seatCode": "C6",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "19",
@@ -444,7 +444,7 @@
       "number": 1,
       "seatCode": "D1",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "20",
@@ -453,7 +453,7 @@
       "number": 2,
       "seatCode": "D2",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "21",
@@ -462,7 +462,7 @@
       "number": 3,
       "seatCode": "D3",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "22",
@@ -471,7 +471,7 @@
       "number": 4,
       "seatCode": "D4",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "23",
@@ -480,7 +480,7 @@
       "number": 5,
       "seatCode": "D5",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "24",
@@ -489,7 +489,7 @@
       "number": 6,
       "seatCode": "D6",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "25",
@@ -606,7 +606,7 @@
       "number": 1,
       "seatCode": "C1",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "38",
@@ -615,7 +615,7 @@
       "number": 2,
       "seatCode": "C2",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "39",
@@ -624,7 +624,7 @@
       "number": 3,
       "seatCode": "C3",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "40",
@@ -633,7 +633,7 @@
       "number": 4,
       "seatCode": "C4",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "41",
@@ -642,7 +642,7 @@
       "number": 5,
       "seatCode": "C5",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "42",
@@ -651,7 +651,7 @@
       "number": 6,
       "seatCode": "C6",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "43",
@@ -660,7 +660,7 @@
       "number": 1,
       "seatCode": "D1",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "44",
@@ -669,7 +669,7 @@
       "number": 2,
       "seatCode": "D2",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "45",
@@ -678,7 +678,7 @@
       "number": 3,
       "seatCode": "D3",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "46",
@@ -687,7 +687,7 @@
       "number": 4,
       "seatCode": "D4",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "47",
@@ -696,7 +696,7 @@
       "number": 5,
       "seatCode": "D5",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "48",
@@ -705,7 +705,7 @@
       "number": 6,
       "seatCode": "D6",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "49",
@@ -822,7 +822,7 @@
       "number": 1,
       "seatCode": "C1",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "62",
@@ -831,7 +831,7 @@
       "number": 2,
       "seatCode": "C2",
       "location": "Media Izquierda",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "63",
@@ -840,7 +840,7 @@
       "number": 3,
       "seatCode": "C3",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "64",
@@ -849,7 +849,7 @@
       "number": 4,
       "seatCode": "C4",
       "location": "Media Centro",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "65",
@@ -858,7 +858,7 @@
       "number": 5,
       "seatCode": "C5",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "66",
@@ -867,7 +867,7 @@
       "number": 6,
       "seatCode": "C6",
       "location": "Media Derecha",
-      "type": "standard"
+      "type": "premium"
     },
     {
       "id": "67",
@@ -876,7 +876,7 @@
       "number": 1,
       "seatCode": "D1",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "68",
@@ -885,7 +885,7 @@
       "number": 2,
       "seatCode": "D2",
       "location": "Posterior Izquierda",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "69",
@@ -894,7 +894,7 @@
       "number": 3,
       "seatCode": "D3",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "70",
@@ -903,7 +903,7 @@
       "number": 4,
       "seatCode": "D4",
       "location": "Posterior Centro",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "71",
@@ -912,7 +912,7 @@
       "number": 5,
       "seatCode": "D5",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     },
     {
       "id": "72",
@@ -921,7 +921,7 @@
       "number": 6,
       "seatCode": "D6",
       "location": "Posterior Derecha",
-      "type": "standard"
+      "type": "vip"
     }
   ],
   "functionSeats": [
@@ -1050,6 +1050,48 @@
       "seatCode": "B4",
       "status": "sold",
       "id": "mX7X6LdYCdY"
+    },
+    {
+      "functionId": 1,
+      "seatId": 5,
+      "seatCode": "A5",
+      "status": "sold",
+      "id": "GdWt3x1f2OE"
+    },
+    {
+      "functionId": 1,
+      "seatId": 18,
+      "seatCode": "C6",
+      "status": "sold",
+      "id": "pBPXxYfBjgI"
+    },
+    {
+      "functionId": 8,
+      "seatId": 49,
+      "seatCode": "A1",
+      "status": "reserved",
+      "id": "YzJvW6-PZ4Y"
+    },
+    {
+      "functionId": 8,
+      "seatId": 50,
+      "seatCode": "A2",
+      "status": "reserved",
+      "id": "gJfLLkMGsuc"
+    },
+    {
+      "functionId": 8,
+      "seatId": 57,
+      "seatCode": "B3",
+      "status": "reserved",
+      "id": "AA3IR45U39Q"
+    },
+    {
+      "functionId": 6,
+      "seatId": 1,
+      "seatCode": "A1",
+      "status": "sold",
+      "id": "YpncTiqEjKs"
     }
   ],
   "reservations": [
@@ -1114,6 +1156,46 @@
       "date": "2026-08-28T18:02:06.491Z",
       "status": "confirmed",
       "id": "HOXsBAU1mfs"
+    },
+    {
+      "userName": "Samuel",
+      "email": "sdasdsadsa@gmail.com",
+      "tmdbId": 1339713,
+      "functionId": 8,
+      "roomId": 3,
+      "quantity": 3,
+      "seats": [
+        {
+          "seatId": 49,
+          "seatCode": "A1",
+          "type": "standard",
+          "price": 20000,
+          "location": "Frontal Izquierda"
+        },
+        {
+          "seatId": 50,
+          "seatCode": "A2",
+          "type": "standard",
+          "price": 20000,
+          "location": "Frontal Izquierda"
+        },
+        {
+          "seatId": 57,
+          "seatCode": "B3",
+          "type": "standard",
+          "price": 20000,
+          "location": "Frontal Centro"
+        }
+      ],
+      "subtotal": 60000,
+      "discount": 12000,
+      "total": 48000,
+      "paymentMethod": "",
+      "card": null,
+      "promoCode": "CINE20",
+      "date": "2026-09-05T20:22:13.192Z",
+      "status": "confirmed",
+      "id": "coJkT3aNWro"
     }
   ],
   "purchases": [
@@ -1212,6 +1294,64 @@
       "date": "2026-08-28T23:22:22.596Z",
       "status": "completed",
       "id": "Cl8dt9htZos"
+    },
+    {
+      "userName": "samuel",
+      "email": "sadlsa@gmail.com",
+      "tmdbId": 969681,
+      "functionId": 1,
+      "roomId": 1,
+      "quantity": 2,
+      "seats": [
+        {
+          "seatId": 5,
+          "seatCode": "A5",
+          "type": "standard",
+          "price": 15000,
+          "location": "Frontal Derecha"
+        },
+        {
+          "seatId": 18,
+          "seatCode": "C6",
+          "type": "premium",
+          "price": 18750,
+          "location": "Media Derecha"
+        }
+      ],
+      "subtotal": 33750,
+      "discount": 6750,
+      "total": 27000,
+      "paymentMethod": "tarjeta",
+      "promoCode": "CINE20",
+      "date": "2026-09-05T19:59:23.531Z",
+      "status": "completed",
+      "id": "vGjgUE8P6Uw"
+    },
+    {
+      "userName": "Samuel",
+      "email": "sdasdsadsa@gmail.com",
+      "tmdbId": 1323244,
+      "functionId": 6,
+      "roomId": 1,
+      "quantity": 1,
+      "seats": [
+        {
+          "seatId": 1,
+          "seatCode": "A1",
+          "type": "standard",
+          "price": 15000,
+          "location": "Frontal Izquierda"
+        }
+      ],
+      "subtotal": 15000,
+      "discount": 3000,
+      "total": 12000,
+      "paymentMethod": "efectivo",
+      "card": null,
+      "promoCode": "CINE20",
+      "date": "2026-09-05T20:24:02.793Z",
+      "status": "completed",
+      "id": "86B9C2aFzR0"
     }
   ],
   "ratings": [
@@ -1221,6 +1361,49 @@
       "score": 4,
       "comment": "Excelente película, muy recomendada.",
       "date": "2026-08-28T02:06:45.820Z"
+    }
+  ],
+  "promoCodes": [
+    {
+      "id": "1",
+      "code": "CINE20",
+      "discount": 20,
+      "active": true
+    },
+    {
+      "id": "2",
+      "code": "VIP10",
+      "discount": 10,
+      "active": true
+    },
+    {
+      "id": "3",
+      "code": "MAX15",
+      "discount": 15,
+      "active": true
+    },
+    {
+      "id": "4",
+      "code": "EXPIRED50",
+      "discount": 50,
+      "active": false
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "email": "juan@email.com"
+    },
+    {
+      "id": "2",
+      "name": "María López",
+      "email": "maria@email.com"
+    },
+    {
+      "name": "Samuel",
+      "email": "sdasdsadsa@gmail.com",
+      "id": "DqR8qwyADqw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
