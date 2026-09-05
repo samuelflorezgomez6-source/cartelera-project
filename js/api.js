@@ -68,6 +68,10 @@ export async function getMovieTrailers(movieId) {
     return data.results;
 }
 
+export async function getPersonDetails(personId) {
+    return tmdbFetch(`/person/${personId}?language=es-ES`);
+}
+
 /* ----------------------- JSON Server ----------------------- */
 
 export async function getRooms() {
@@ -178,4 +182,47 @@ export async function getRatingsByMovie(tmdbId) {
         console.error("Error al obtener calificaciones:", error);
         return [];
     }
+}
+
+/* ----------------------- Promociones y usuarios ----------------------- */
+
+export async function getPromoCodes() {
+    try {
+        const response = await fetch(`${LOCAL_API_URL}/promoCodes`);
+        return normalizeIds(await response.json());
+    } catch (error) {
+        console.error("Error al obtener códigos promocionales:", error);
+        return [];
+    }
+}
+
+export async function getPromoByCode(code) {
+    try {
+        const response = await fetch(`${LOCAL_API_URL}/promoCodes?code=${encodeURIComponent(code)}`);
+        const list = normalizeIds(await response.json());
+        return list.length > 0 ? list[0] : null;
+    } catch (error) {
+        console.error("Error al consultar el código promocional:", error);
+        return null;
+    }
+}
+
+export async function getUserByEmail(email) {
+    try {
+        const response = await fetch(`${LOCAL_API_URL}/users?email=${encodeURIComponent(email)}`);
+        const list = normalizeIds(await response.json());
+        return list.length > 0 ? list[0] : null;
+    } catch (error) {
+        console.error("Error al consultar el usuario:", error);
+        return null;
+    }
+}
+
+export async function saveUser(userData) {
+    const response = await fetch(`${LOCAL_API_URL}/users`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData)
+    });
+    return normalizeIds(await response.json());
 }
